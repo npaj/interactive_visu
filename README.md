@@ -5,8 +5,13 @@ Code is based on numpy, scipy, plotly, dash, pandas, sounddevice,
 ## Generation CSV
 key words : x, y, target, filename
 
-## Run
-
+### Example
+To generete datas and CSV exemple run
 ```
-python main.py --metadatapath info_d3.csv --datapath [data_path]
+python3 generation_csv.py
+```
+
+## Run
+```
+python3 main.py --metadatapath out.csv --datapath datas/
 ```
