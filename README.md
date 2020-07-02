@@ -1,6 +1,6 @@
 # Interactive visualization
 This program works with .txt data.
-Code is based on numpy, scipy, plotly, dash, pandas, sounddevice, 
+Code is based on numpy, scipy, plotly, dash, pandas and sounddevice. 
 
 ## Generation CSV
 key words : x, y, target, filename
