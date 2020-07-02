@@ -56,13 +56,13 @@ app.layout = html.Div([
                 thicknessmode = 'fraction',
                 thickness=0.01,
                 xanchor = 'center')))],
-                'layout': dict(title='emb',
+           'layout': dict(title='emb',
                 xaxis_title="",
                 yaxis_title="",
                 height=1000,
                 scene = dict(zaxis = dict(
                 title='amb')))}), style={'width': '100%'}),
-                dcc.Markdown('''
+            dcc.Markdown('''
                     [lien projet](nn)
                         ''', id = 'MC'),
             dcc.Graph(id = 'signal'),
