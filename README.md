@@ -6,7 +6,7 @@ Code is based on numpy, scipy, plotly, dash, pandas, sounddevice,
 key words : x, y, target, filename
 
 ### Example
-To generete datas and CSV exemple run
+To generete datas and CSV (example) run
 ```
 python3 generation_csv.py
 ```
