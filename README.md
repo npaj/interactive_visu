@@ -13,5 +13,7 @@ python3 generation_csv.py
 
 ## Run
 ```
-python3 main.py --metadatapath out.csv --datapath datas/
+python3 main.py --metadatapath out.csv --datapath data/
 ```
+
+[example.png]

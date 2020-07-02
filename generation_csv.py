@@ -3,17 +3,17 @@ import pandas as pd
 import numpy as np
 
 df = pd.DataFrame()
-
-x = np.random.randn(5)
-y = np.random.randn(5)
-target_list = np.random.randint(10, size=(5))
-filename_list = [f'{k}.txt' for k in range(1,6)]
+npoints = 50
+x = np.random.randn(npoints)
+y = np.random.randn(npoints)
+target_list = np.random.randint(10, size=(npoints))
+filename_list = [f'{k}.txt' for k in range(1,npoints+1)]
 
 folder = 'data'
 if not os.path.exists(folder):
     os.makedirs(folder)
     print(f"{folder} folder created.")
-    
+
 for k in filename_list:
     np.savetxt(os.path.join(folder, k), np.random.randn(8000))
 
