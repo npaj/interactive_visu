@@ -8,12 +8,12 @@ key words : x, y, target, filename
 ### Example
 To generete datas and CSV (example) run
 ```
-python3 generation_csv.py
+python generation_csv.py
 ```
 
 ## Run
 ```
-python3 main.py --metadatapath out.csv --datapath data/
+python main.py --metadatapath out.csv --datapath data/
 ```
 
 ![example](example.png)
