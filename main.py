@@ -41,33 +41,34 @@ app.layout = html.Div([
     html.Div(
         dcc.Graph(id='3Demb', 
         figure = {
-        'data': [go.Scatter(
-            x = info['x'],
-            y = info['y'],
-            
-            mode = 'markers',
-            text=['target : {} <br>filename : {}'.format(info['target'][k], info['filename'][k]) for k in range(len(info))],
-            marker=dict(size = 15,
-                color=info['target'],
-                colorscale='jet',
-                showscale=True,
-                line_width=1,
-                colorbar=dict(
-                thicknessmode = 'fraction',
-                thickness=0.01,
-                xanchor = 'center')))],
-           'layout': dict(title='emb',
+            'data': [go.Scatter(
+                x = info['x'],
+                y = info['y'],
+                
+                mode = 'markers',
+                text=['target : {} <br>filename : {}'.format(info['target'][k], info['filename'][k]) for k in range(len(info))],
+                marker=dict(size = 15,
+                    color=info['target'],
+                    colorscale='jet',
+                    showscale=True,
+                    line_width=1,
+                    colorbar=dict(
+                    thicknessmode = 'fraction',
+                    thickness=0.01,
+                    xanchor = 'center')))],
+            'layout': dict(title='emb',
                 xaxis_title="",
                 yaxis_title="",
                 height=1000,
                 scene = dict(zaxis = dict(
-                title='amb')))}), style={'width': '100%'}),
-            dcc.Markdown('''
-                    [lien projet](nn)
-                        ''', id = 'MC'),
-            dcc.Graph(id = 'signal'),
-            dcc.Graph(id = 'fft'),
-            dcc.Graph(id = 'stft')], 
+                title='amb')))}), 
+        style={'width': '100%'}),
+        dcc.Markdown('''
+                [lien projet](nn)
+                    ''', id = 'MC'),
+        dcc.Graph(id = 'signal'),
+        dcc.Graph(id = 'fft'),
+        dcc.Graph(id = 'stft')], 
         style={'columnCount': 2}  )
 
 
