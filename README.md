@@ -16,4 +16,4 @@ python3 generation_csv.py
 python3 main.py --metadatapath out.csv --datapath data/
 ```
 
-[example.png]
+![example](example.png)
