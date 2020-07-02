@@ -17,3 +17,6 @@ python main.py --metadatapath out.csv --datapath data/
 ```
 
 ![example](example.png)
+
+# Credit
+Nicolas Pajusco, 2020
