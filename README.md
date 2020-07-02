@@ -1,4 +1,4 @@
-# Interactive visualisation
+# Interactive visualization
 This program works with .txt data.
 Code is based on numpy, scipy, plotly, dash, pandas, sounddevice, 
 
